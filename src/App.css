@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+/* Custom Font */
 @theme {
   --font-sans: "Poppins", sans-serif;
 }
@@ -37,4 +38,10 @@
   src: url("/src/assets/fonts/Poppins-Italic.woff2");
   font-weight: 400;
   font-style: italic;
+}
+
+/* Custom selection color */
+::selection {
+  background-color: black;
+  color: yellow;
 }
