@@ -1,23 +1,25 @@
-import { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Portrait from "./assets/images/portrait.jpg";
 
 function App() {
+  const heroData = {
+    title: "Alexander Melander",
+    description:
+      "Hi, I'm a web developer passionate about building awesome projects.",
+    Portrait,
+  };
+
   return (
     <>
       <section className="bg-gray-800 h-screen">
         <Navbar />
-        <div className="flex flex-col justify-center items-center">
-          <h1 className="text-4xl text-yellow-300 font-extrabold pt-8 text-center">
-            Alexander Melander
-          </h1>
-          <h2 className="pt-2 text-center text-white max-w-[500px] text-2xl font-semibold">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-            iste vel asperiores inventore sit omnis?
-          </h2>
-        </div>
+
+        <Hero {...heroData} />
       </section>
+
       <Footer />
     </>
   );

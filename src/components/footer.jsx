@@ -13,22 +13,34 @@ export default function Footer() {
             <h3 className="text-lg font-bold">Quick Links</h3>
             <ul className="mt-2">
               <li>
-                <a href="#home" className="hover:underline">
+                <a
+                  href="#home"
+                  className="hover:underline hover:decoration-amber-200 underline-offset-2"
+                >
                   Home
                 </a>
               </li>
               <li>
-                <a href="#about" className="hover:underline">
+                <a
+                  href="#about"
+                  className="hover:underline hover:decoration-amber-200 underline-offset-2"
+                >
                   About
                 </a>
               </li>
               <li>
-                <a href="#projects" className="hover:underline">
+                <a
+                  href="#projects"
+                  className="hover:underline hover:decoration-amber-200 underline-offset-2"
+                >
                   Projects
                 </a>
               </li>
               <li>
-                <a href="#contact" className="hover:underline">
+                <a
+                  href="#contact"
+                  className="hover:underline hover:decoration-amber-200 underline-offset-2"
+                >
                   Contact
                 </a>
               </li>
