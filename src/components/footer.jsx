@@ -6,7 +6,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold">About Me</h3>
             <p className="mt-2">
-              I’m a web developer passionate about building awesome projects.
+              I'm a web developer passionate about building awesome projects.
             </p>
           </div>
           <div>
