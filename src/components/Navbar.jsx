@@ -1,12 +1,15 @@
 import react, { useState } from "react";
+import Logo from "../assets/images/amlogo.svg";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gray-700 p-4 mb-10">
+    <nav className="bg-gray-800 p-4 ">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white text-lg font-bold">My Portfolio</div>
+        <div>
+          <img src={Logo} alt="AM Logo" width="100" height="100" />
+        </div>
         <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}

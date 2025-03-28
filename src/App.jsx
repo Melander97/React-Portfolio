@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Portrait from "./assets/images/portrait.jpg";
+import Tech from "./components/Tech";
 
 function App() {
   const heroData = {
@@ -14,12 +15,12 @@ function App() {
 
   return (
     <>
-      <section className="bg-gray-800 h-screen">
-        <Navbar />
-
+      <Navbar />
+      <section className="bg-linear-to-b from-gray-800 via-blue-800 to-gray-900 min-h-screen">
         <Hero {...heroData} />
-      </section>
 
+        <Tech />
+      </section>
       <Footer />
     </>
   );
