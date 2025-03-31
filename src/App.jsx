@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <section className="bg-linear-to-b from-gray-800 via-blue-800 to-gray-900 min-h-screen">
+      <section className="bg-linear-to-b from-gray-800 via-blue-800 to-gray-900">
         <Hero {...heroData} />
 
         <Tech />
