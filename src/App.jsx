@@ -16,12 +16,22 @@ function App() {
   return (
     <>
       <Navbar />
-      <section className="bg-linear-to-b from-gray-800 via-blue-800 to-gray-900">
-        <Hero {...heroData} />
+      <main>
+        {/* hero section */}
+        <section
+          id="home"
+          className="min-h-screen bg-linear-to-b from-gray-900 via-gray-800 to-gray-900 "
+        >
+          <Hero {...heroData} />
+        </section>
 
-        <Tech />
-      </section>
-      <Footer />
+        {/*tech stack section */}
+        <section id="tech">
+          <Tech />
+        </section>
+      </main>
+
+      <Footer id="contact" />
     </>
   );
 }
