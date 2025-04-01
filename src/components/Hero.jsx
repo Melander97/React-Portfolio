@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 export default function Hero({ title, description, Portrait }) {
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-4 py-10 md:py-20 md:px-8 max-w-7xl mx-auto">
+      <div className="container grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-4 py-10 md:py-20 md:px-8 max-w-7xl mx-auto">
         {/* Text Content */}
         <motion.div
           className="flex flex-col gap-y-4 text-center md:text-start w-full"

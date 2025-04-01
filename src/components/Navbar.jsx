@@ -1,15 +1,24 @@
 import react, { useState } from "react";
 import Logo from "../assets/images/amlogo.svg";
-import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleSmoothScroll = (e, targetId) => {
+    e.preventDefault();
+    document.querySelector(targetId)?.scrollIntoView({
+      behavior: "smooth",
+    });
+    setIsOpen(false);
+  };
 
   return (
     <nav className="bg-gray-800 p-4">
       <div className="container mx-auto flex justify-between items-center">
         <div>
-          <img src={Logo} alt="AM Logo" width="100" height="100" />
+          <a href="/home">
+            <img src={Logo} alt="AM Logo" width="100" height="100" />
+          </a>
         </div>
 
         {/* Mobile menu button */}
@@ -97,9 +106,9 @@ export default function Navbar() {
 
             <li>
               <a
-                href="#home"
+                href="#footer"
                 className="text-white hover:text-gray-400 block py-2 md:inline md:py-0"
-                onClick={() => setIsOpen(false)}
+                onClick={(e) => handleSmoothScroll(e, "footer")}
               >
                 Home
               </a>
@@ -108,7 +117,7 @@ export default function Navbar() {
               <a
                 href="#about"
                 className="text-white hover:text-gray-400 block py-2 md:inline md:py-0"
-                onClick={() => setIsOpen(false)}
+                onClick={(e) => handleSmoothScroll(e, "about")}
               >
                 About
               </a>
@@ -117,7 +126,7 @@ export default function Navbar() {
               <a
                 href="#projects"
                 className="text-white hover:text-gray-400 block py-2 md:inline md:py-0"
-                onClick={() => setIsOpen(false)}
+                onClick={(e) => handleSmoothScroll(e, "projects")}
               >
                 Projects
               </a>
@@ -126,7 +135,7 @@ export default function Navbar() {
               <a
                 href="#contact"
                 className="text-white hover:text-gray-400 block py-2 md:inline md:py-0"
-                onClick={() => setIsOpen(false)}
+                onClick={(e) => handleSmoothScroll(e, "contact")}
               >
                 Contact
               </a>
