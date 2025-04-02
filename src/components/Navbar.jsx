@@ -13,7 +13,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-gray-800 p-4">
+    <nav className="bg-gray-800 p-2 sticky top-0 z-50 shadow-lg">
       <div className="container mx-auto flex justify-between items-center">
         <div>
           <a href="/home">
@@ -74,9 +74,9 @@ export default function Navbar() {
           <ul
             className={`${
               isOpen
-                ? "absolute top-0 left-0 w-full bg-gray-800 p-4 shadow-lg"
+                ? "absolute top-0 left-0 w-full bg-gray-800 p-2 shadow-lg"
                 : "hidden"
-            } md:flex md:space-x-4 md:bg-transparent md:p-0 md:shadow-none`}
+            } md:flex md:space-x-6 md:bg-transparent md:p-0 md:shadow-none`}
           >
             {/* Close button for mobile */}
             {isOpen && (
