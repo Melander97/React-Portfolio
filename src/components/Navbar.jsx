@@ -1,4 +1,4 @@
-import react, { useState } from "react";
+import { useState, useEffect } from "react";
 import Logo from "../assets/images/amlogo.svg";
 
 export default function Navbar() {
@@ -12,8 +12,25 @@ export default function Navbar() {
     setIsOpen(false);
   };
 
+  // State to track if the user has scrolled down
+  const [scrolled, setScrolled] = useState(false);
+  const handleScroll = () => {
+    setScrolled(window.scrollY > 50);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="bg-gray-800 p-2 sticky top-0 z-50 shadow-lg">
+    <nav
+      className={` p-2 sticky top-0 z-50 shadow-lg transition-all duration-300 ${
+        scrolled ? "bg-gray-800" : "bg-gray-900"
+      }`}
+    >
       <div className="container mx-auto flex justify-between items-center">
         <div>
           <a href="/home">
