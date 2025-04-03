@@ -1,6 +1,6 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Portrait from "./assets/images/portrait.jpg";
 import Tech from "./components/Tech";
