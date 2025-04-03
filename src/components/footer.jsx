@@ -1,3 +1,8 @@
+import { hover } from "motion";
+import { FaInstagram } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+
 export default function Footer() {
   return (
     <footer className="bg-gray-800 text-white p-6 mt-auto">
@@ -49,14 +54,26 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold">Follow Me</h3>
             <div className="mt-2 flex space-x-4">
-              <a href="https://twitter.com" className="hover:text-gray-400">
-                Twitter
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/alexander-melander-0b804726a/"
+                className="p-2 hover:text-blue-500  hover:bg-gray-400/10 rounded-full transition-color duration-300"
+              >
+                <FaLinkedin size={36} />
               </a>
-              <a href="https://github.com" className="hover:text-gray-400">
-                GitHub
+              <a
+                target="_blank"
+                href="https://github.com/Melander97"
+                className="p-2 hover:text-purple-700 hover:bg-gray-400/10 rounded-full transition-color duration-300"
+              >
+                <FaGithub size={36} />
               </a>
-              <a href="https://linkedin.com" className="hover:text-gray-400">
-                LinkedIn
+              <a
+                target="_blank"
+                href="https://www.instagram.com/alexmelandeer/"
+                className="p-2 hover:text-orange-600 hover:bg-gray-400/10 rounded-full hover:bg-opacity-40 transition-color duration-300"
+              >
+                <FaInstagram size={36} />
               </a>
             </div>
           </div>
