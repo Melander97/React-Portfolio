@@ -52,7 +52,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-bold">Follow Me</h3>
+            <h3 className="text-lg font-bold p-2">Follow Me</h3>
             <div className="mt-2 flex space-x-4">
               <a
                 target="_blank"
