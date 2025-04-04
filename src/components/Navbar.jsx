@@ -123,9 +123,9 @@ export default function Navbar() {
 
             <li>
               <a
-                href="#footer"
+                href="#home"
                 className="text-white hover:text-gray-400 block py-2 md:inline md:py-0"
-                onClick={(e) => handleSmoothScroll(e, "footer")}
+                onClick={(e) => handleSmoothScroll(e, "home")}
               >
                 Home
               </a>
@@ -150,9 +150,9 @@ export default function Navbar() {
             </li>
             <li>
               <a
-                href="#contact"
+                href="#footer"
                 className="text-white hover:text-gray-400 block py-2 md:inline md:py-0"
-                onClick={(e) => handleSmoothScroll(e, "contact")}
+                onClick={(e) => handleSmoothScroll(e, "footer")}
               >
                 Contact
               </a>
