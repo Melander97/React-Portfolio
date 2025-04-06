@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 export default function ProjectCard({ project }) {
   return (
     <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -24,14 +26,39 @@ export default function ProjectCard({ project }) {
         </div>
 
         <div className="flex gap-4">
-          <a
-            href={project.link}
-            className="px-4 py-2 bg-blue-600 rounded hover:bg-blue-700 transition"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Live Demo
-          </a>
+          <div className="relative group">
+            {project.isComingSoon ? (
+              <div
+                className="inline-block pointer-events-none"
+                title="Coming soon"
+                aria-disabled="true"
+              >
+                <Button
+                  variant="secondary"
+                  disabled
+                  className="pointer-events-none opacity-90 hover:opacity-90"
+                  aria-hidden="true"
+                >
+                  Coming Soon
+                </Button>
+              </div>
+            ) : (
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block"
+              >
+                <Button variant="primary">Live Demo</Button>
+              </a>
+            )}
+
+            {project.isComingSoon && (
+              <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-gray-800 text-white px-2 py-1 rounded text-xs opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-50">
+                Working on it! 🚧
+              </span>
+            )}
+          </div>
         </div>
       </div>
     </div>

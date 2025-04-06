@@ -44,6 +44,14 @@ export default function Projects() {
       technologies: ["React", "JavaScript"],
       link: "https://teamtech.se/",
     },
+    {
+      title: "Middler",
+      description: "Description for project 4",
+      image: "https://placehold.co/800",
+      technologies: ["React", "JavaScript"],
+      link: "#",
+      isComingSoon: true,
+    },
   ];
 
   return (
