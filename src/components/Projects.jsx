@@ -1,4 +1,5 @@
 import ProjectCard from "./ProjectCard";
+import Trolska from "../assets/images/trolska.webp";
 
 export default function Projects() {
   const projectsData = [
@@ -19,7 +20,7 @@ export default function Projects() {
     {
       title: "Trolska skogen",
       description: "Description for project 2",
-      image: "https://placehold.co/400",
+      image: Trolska,
       technologies: ["HTML", "CSS"],
       link: "https://www.trolskaskogen.se/",
     },
