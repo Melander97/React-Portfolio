@@ -1,12 +1,17 @@
 import ProjectCard from "./ProjectCard";
 import Trolska from "../assets/images/trolska.webp";
+import Urban from "../assets/images/urbanadvisor.webp";
+import Teamtech from "../assets/images/teamtech.webp";
+import Kreng from "../assets/images/kreng.webp";
+import Middler from "../assets/images/middler.webp";
+import Thermonord from "../assets/images/thermonord.webp";
 
 export default function Projects() {
   const projectsData = [
     {
       title: "Kreng",
       description: "Description for project 1",
-      image: "https://placehold.co/150  ",
+      image: Kreng,
       technologies: [
         "React",
         "JavaScript",
@@ -27,28 +32,28 @@ export default function Projects() {
     {
       title: "Thermo Nord",
       description: "Description for project 3",
-      image: "https://placehold.co/200",
+      image: Thermonord,
       technologies: ["JavaScript", "CSS"],
       link: "https://thermonord.se/",
     },
     {
       title: "Urban Advisors",
       description: "Description for project 4",
-      image: "https://placehold.co/800",
+      image: Urban,
       technologies: ["React", "JavaScript"],
       link: "https://urbanadvisors.se/",
     },
     {
       title: "Teamtech",
       description: "Description for project 4",
-      image: "https://placehold.co/800",
+      image: Teamtech,
       technologies: ["React", "JavaScript"],
       link: "https://teamtech.se/",
     },
     {
       title: "Middler",
       description: "Description for project 4",
-      image: "https://placehold.co/800",
+      image: Middler,
       technologies: ["React", "JavaScript"],
       link: "#",
       isComingSoon: true,
