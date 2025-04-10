@@ -28,7 +28,7 @@ export default function Hero({ title, description, Portrait }) {
             </Button>
           </div>
         </motion.div>
-
+        {/* test */}
         {/* Image */}
         <motion.div
           className="w-full flex justify-center"
