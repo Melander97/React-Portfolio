@@ -1,3 +1,4 @@
+import { motion, spring } from "motion/react";
 import ProjectCard from "./ProjectCard";
 import Trolska from "../assets/images/trolska.webp";
 import Urban from "../assets/images/urbanadvisor.webp";
@@ -63,16 +64,50 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="flex min-h-screen w-full flex-col items-center justify-center gap-16 p-4 md:px-14 py-12 md:py-24"
+      className="flex min-h-screen w-full flex-col items-center justify-center gap-16 p-4 md:px-14 py-12 "
     >
-      <h1 className="text-4xl md:text-6xl text-white font-light">
+      <motion.h1
+        initial={{ y: -20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6 }}
+        className="text-4xl md:text-6xl text-white font-light py-0 md:py-10"
+      >
         My Projects
-      </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 w-full max-w-[1200px]">
+      </motion.h1>
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: { opacity: 0 },
+          visible: {
+            opacity: 1,
+            transition: {
+              staggerChildren: 0.15,
+            },
+          },
+        }}
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 w-full max-w-[1200px]"
+      >
         {projectsData.map((project, index) => (
-          <ProjectCard key={index} project={project} />
+          <motion.div
+            key={index}
+            variants={{
+              hidden: { y: 30, opacity: 0 },
+              visible: {
+                y: 0,
+                opacity: 1,
+                transition: { type: "spring", stiffness: 100 },
+              },
+            }}
+            whileHover={{
+              y: -5,
+              transition: { type: "spring", stiffness: 400 },
+            }}
+          >
+            <ProjectCard project={project} />
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 }

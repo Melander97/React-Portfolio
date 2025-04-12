@@ -11,7 +11,12 @@ export default function Hero({ title, description, Portrait }) {
           className="flex flex-col gap-y-4 text-center md:text-start w-full"
           initial={{ x: -50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
+          transition={{
+            type: "spring",
+            damping: 10,
+            stiffness: 100,
+            delay: 0.2,
+          }}
         >
           <h1 className="text-4xl font-extrabold text-yellow-300 sm:text-5xl lg:text-6xl xl:text-7xl">
             {title}
@@ -28,7 +33,7 @@ export default function Hero({ title, description, Portrait }) {
             </Button>
           </div>
         </motion.div>
-        {/* test */}
+
         {/* Image */}
         <motion.div
           className="w-full flex justify-center"
