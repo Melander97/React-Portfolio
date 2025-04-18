@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Logo from "../assets/images/amlogo.svg";
+import Logo from "../assets/images/portfoliologo.svg";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +34,7 @@ export default function Navbar() {
       <div className="container mx-auto flex justify-between items-center">
         <div>
           <a href="/home">
-            <img src={Logo} alt="AM Logo" width="100" height="100" />
+            <img src={Logo} alt="AM Logo" width="60" height="100" />
           </a>
         </div>
 
