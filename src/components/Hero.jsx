@@ -2,7 +2,12 @@ import React from "react";
 import Button from "./Button";
 import { motion } from "motion/react";
 
-export default function Hero({ title, description, Portrait }) {
+export default function Hero({
+  title,
+  description,
+  Portrait,
+  PortraitFallback,
+}) {
   return (
     <>
       <div className="container grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-4 py-10 md:py-20 md:px-8 max-w-7xl mx-auto">
@@ -41,11 +46,15 @@ export default function Hero({ title, description, Portrait }) {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.7, delay: 0.2 }}
         >
-          <img
-            src={Portrait}
-            alt="Portrait"
-            className="object-cover rounded-xl md:rounded-full w-full max-w-md md:max-w-xs lg:max-w-md xl:max-w-lg transition-transform duration-300 hover:scale-105"
-          />
+          <picture>
+            <source srcSet={Portrait} type="image/webp" />
+            <img
+              src={PortraitFallback}
+              alt="Portrait"
+              className="object-cover rounded-xl md:rounded-full w-full max-w-md md:max-w-xs lg:max-w-md xl:max-w-lg transition-transform duration-300 hover:scale-105 aspect-square border-4 border-white/10 md:border-8"
+              loading="eager"
+            />
+          </picture>
         </motion.div>
       </div>
     </>

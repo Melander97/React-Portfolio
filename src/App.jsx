@@ -2,7 +2,8 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
-import Portrait from "./assets/images/portrait.jpg";
+import Portrait from "./assets/images/portrait-optimized.webp";
+import PortraitFallback from "./assets/images/portrait-fallback.jpg";
 import Tech from "./components/Tech";
 import Projects from "./components/Projects";
 
@@ -12,6 +13,7 @@ function App() {
     description:
       "Hi, I'm a web developer passionate about building awesome projects.",
     Portrait,
+    PortraitFallback,
   };
 
   return (

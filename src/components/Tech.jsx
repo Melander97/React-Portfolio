@@ -30,7 +30,7 @@ export default function Tech() {
           initial="hidden"
           whileInView="visible"
           transition={{ duration: 0.5 }}
-          className="text-4xl md:text-6xl text-white lg:mt-10"
+          className="text-4xl md:text-6xl text-white mt-4 md:mt-6 lg:mt-10"
         >
           Technologies
         </motion.h1>
