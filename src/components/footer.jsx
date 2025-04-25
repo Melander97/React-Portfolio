@@ -3,77 +3,54 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
+  const SocialIcon = ({ href, icon, color }) => (
+    <a
+      href={href}
+      target="_blank"
+      className={`p-3 hover:bg-gray-400/10 rounded-full transition-all duration-300 active:scale-95 active:bg-gray-400/50 ${color}`}
+    >
+      {icon}
+    </a>
+  );
+
   return (
-    <footer className="bg-gray-800 text-white p-6 mt-auto">
+    <footer id="footer" className="bg-gray-800 text-white p-6 mt-auto">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
           <div>
-            <h3 className="text-lg font-bold">About Me</h3>
+            <h3 className="text-lg font-bold">Let's Connect</h3>
             <p className="mt-2">
-              I'm a web developer passionate about building awesome projects.
+              Interested in working together? Reach out via
+              <a
+                href="mailto:your@email.com"
+                className="text-amber-300 hover:underline ml-1"
+              >
+                email
+              </a>
+              .
             </p>
           </div>
+
           <div>
-            <h3 className="text-lg font-bold">Quick Links</h3>
-            <ul className="mt-2">
-              <li>
-                <a
-                  href="#home"
-                  className="hover:underline hover:decoration-amber-200 underline-offset-2"
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#about"
-                  className="hover:underline hover:decoration-amber-200 underline-offset-2"
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#projects"
-                  className="hover:underline hover:decoration-amber-200 underline-offset-2"
-                >
-                  Projects
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  className="hover:underline hover:decoration-amber-200 underline-offset-2"
-                >
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-lg font-bold p-2">Follow Me</h3>
+            <h3 className="text-lg font-bold ">Follow Me</h3>
             <div className="mt-2 flex space-x-4">
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/alexander-melander-0b804726a/"
-                className="p-2 hover:text-blue-500  hover:bg-gray-400/10 rounded-full transition-color duration-300"
-              >
-                <FaLinkedin size={36} />
-              </a>
-              <a
-                target="_blank"
-                href="https://github.com/Melander97"
-                className="p-2 hover:text-purple-700 hover:bg-gray-400/10 rounded-full transition-color duration-300"
-              >
-                <FaGithub size={36} />
-              </a>
-              <a
-                target="_blank"
-                href="https://www.instagram.com/alexmelandeer/"
-                className="p-2 hover:text-orange-600 hover:bg-gray-400/10 rounded-full hover:bg-opacity-40 transition-color duration-300"
-              >
-                <FaInstagram size={36} />
-              </a>
+              {SocialIcon({
+                href: "https://www.linkedin.com/in/alexander-melander-0b804726a/",
+                icon: <FaLinkedin size={36} />,
+                color: "hover:text-blue-500",
+              })}
+
+              {SocialIcon({
+                href: "https://github.com/Melander97",
+                icon: <FaGithub size={36} />,
+                color: "hover:text-purple-700",
+              })}
+
+              {SocialIcon({
+                href: "https://www.instagram.com/alexmelandeer/",
+                icon: <FaInstagram size={36} />,
+                color: "hover:text-orange-600",
+              })}
             </div>
           </div>
         </div>

@@ -39,7 +39,7 @@ function App() {
         </section>
       </main>
 
-      <Footer id="contact" />
+      <Footer />
     </>
   );
 }
