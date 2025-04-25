@@ -30,12 +30,9 @@ export default function Hero({
             {description}
           </h2>
           <div className="flex justify-center md:justify-start pt-2">
-            <Button
-              variant="secondary"
-              onClick={() => alert("Contact clicked!")}
-            >
-              Contact Me
-            </Button>
+            <a href="#footer" className="inline-block">
+              <Button variant="primary">Contact Me</Button>
+            </a>
           </div>
         </motion.div>
 
@@ -51,7 +48,7 @@ export default function Hero({
             <img
               src={PortraitFallback}
               alt="Portrait"
-              className="object-cover rounded-xl md:rounded-full w-full max-w-md md:max-w-xs lg:max-w-md xl:max-w-lg transition-transform duration-300 hover:scale-105 aspect-square border-4 border-white/10 md:border-8"
+              className="object-cover rounded-xl md:rounded-full w-full max-w-md md:max-w-xs lg:max-w-md xl:max-w-lg transition-all duration-300 hover:scale-105 aspect-square border-4 border-white/10 md:border-8 shadow-lg shadow-black/20 hover:shadow-xl hover:shadow-black/30"
               loading="eager"
             />
           </picture>

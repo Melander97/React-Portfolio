@@ -150,9 +150,14 @@ export default function Navbar() {
             </li>
             <li>
               <a
-                href="#footer"
+                href="mailto:alexandermelander1@gmail.com"
                 className="text-white hover:text-gray-400 block py-2 md:inline md:py-0"
-                onClick={(e) => handleSmoothScroll(e, "footer")}
+                onClick={(e) => {
+                  if (isMobile) {
+                    e.preventDefault();
+                    scrollToFooter();
+                  }
+                }}
               >
                 Contact
               </a>
