@@ -9,16 +9,16 @@ export default function ProjectCard({ project }) {
         className="w-full h-48 object-cover"
       />
       <div className="p-6">
-        <h3 className="text-2xl text-white font-semibold mb-2">
+        <h2 className="text-2xl text-white font-semibold mb-2">
           {project.title}
-        </h3>
+        </h2>
         <p className="text-gray-300 mb-4">{project.description}</p>
 
         <div className="flex flex-wrap gap-2 mb-4">
           {project.technologies.map((tech, index) => (
             <span
               key={index}
-              className="px-3 py-1 bg-gray-700 rounded-full text-sm"
+              className="px-3 py-1 bg-gray-700 rounded-full text-sm text-white"
             >
               {tech}
             </span>

@@ -3,10 +3,12 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
-  const SocialIcon = ({ href, icon, color }) => (
+  const SocialIcon = ({ href, icon, color, platform }) => (
     <a
       href={href}
+      rel="noopener noreferrer"
       target="_blank"
+      aria-label={`${platform} (opens in new tab)`}
       className={`p-3 hover:bg-gray-400/10 rounded-full transition-all duration-300 active:scale-95 active:bg-gray-400/50 ${color}`}
     >
       {icon}
@@ -22,8 +24,8 @@ export default function Footer() {
             <p className="mt-2">
               Interested in working together? Reach out via
               <a
-                href="mailto:your@email.com"
-                className="text-amber-300 hover:underline ml-1"
+                href="mailto:alexandermelander1@gmail.com"
+                className="text-amber-300 underline underline-offset-4 decoration-transparent hover:decoration-amber-300 ml-1"
               >
                 email
               </a>
@@ -38,18 +40,21 @@ export default function Footer() {
                 href: "https://www.linkedin.com/in/alexander-melander-0b804726a/",
                 icon: <FaLinkedin size={36} />,
                 color: "hover:text-blue-500",
+                platform: "LinkedIn",
               })}
 
               {SocialIcon({
                 href: "https://github.com/Melander97",
                 icon: <FaGithub size={36} />,
                 color: "hover:text-purple-700",
+                platform: "GitHub",
               })}
 
               {SocialIcon({
                 href: "https://www.instagram.com/alexmelandeer/",
                 icon: <FaInstagram size={36} />,
                 color: "hover:text-orange-600",
+                platform: "Instagram",
               })}
             </div>
           </div>
