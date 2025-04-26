@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /private/
+# Sitemap will be added after deployment
