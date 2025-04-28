@@ -23,4 +23,4 @@ Feel free to connect with me on [LinkedIn](https://linkedin.com/in/https://www.l
 
 ---
 
-Made with ❤️ by [Your Name](https://yourdomain.com)
+Made with ❤️ by [Alexander](https://yourdomain.com)
