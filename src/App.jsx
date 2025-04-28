@@ -11,7 +11,7 @@ function App() {
   const heroData = {
     title: "Alexander Melander",
     description:
-      "Hi, I'm a web developer from Sweden passionate about building awesome projects.",
+      "Hi, I'm a web developer from Sweden, passionate about building awesome projects.",
     Portrait,
     PortraitFallback,
   };
