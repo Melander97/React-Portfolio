@@ -11,42 +11,54 @@ export default function Projects() {
   const projectsData = [
     {
       title: "Kreng",
-      description: "Description for project 1",
+      description:
+        "A responsive portfolio site for a Swedish web dev agency, built with Next.js, Tailwind, and a headless WordPress CMS powered by GraphQL.",
       image: Kreng,
       technologies: ["Next.js", "Tailwind", "Wordpress (Headless)", "GraphQL"],
       link: "https://kreng.se/",
     },
     {
       title: "Trolska skogen",
-      description: "Description for project 2",
+      description:
+        "A custom WordPress site for Trolska Skogen, built from the ground up with Tailwind. Focused on vibrant colors and immersive imagery to better reflect the park's playful, magical atmosphere.",
       image: Trolska,
-      technologies: ["Wordpress", "PHP", "Tailwind", "MySQL"],
+      technologies: ["Wordpress", "PHP", "Tailwind", "MySQL", "WooCommerce"],
       link: "https://www.trolskaskogen.se/",
     },
     {
-      title: "Thermo Nord",
-      description: "Description for project 3",
-      image: Thermonord,
-      technologies: ["Next.Js", "Wordpress", "Tailwind", "Javascript"],
-      link: "https://thermonord.se/",
-    },
-    {
       title: "Urban Advisors",
-      description: "Wordpress SPA created solo by myself",
+      description:
+        "A lightweight, single-page WordPress site for Urban Advisors, designed and developed solo. Built with Tailwind and PHP to deliver a fast, modern layout for a streamlined business presence.",
       image: Urban,
       technologies: ["JavaScript", "PHP", "Wordpress", "Tailwind"],
       link: "https://urbanadvisors.se/",
     },
     {
+      title: "Thermo Nord",
+      description:
+        "A modern marketing and product site for Thermo Nord, built with Next.js, Tailwind, and WordPress. We implemented WooCommerce to showcase heating systems for commercial and agricultural buildings, combining clean design with simple product browsing.",
+      image: Thermonord,
+      technologies: [
+        "Next.Js",
+        "Wordpress",
+        "WooCommerce",
+        "Tailwind",
+        "Javascript",
+      ],
+      link: "https://thermonord.se/",
+    },
+    {
       title: "Teamtech",
-      description: "Description for project 4",
+      description:
+        "A colorful marketing site for Teamtech, built with Next.js, WordPress, TypeScript, and Tailwind. Developed to deliver a modern, multi-page layout with dynamic content and a responsive design.",
       image: Teamtech,
       technologies: ["Next.js", "Typescript", "Wordpress", "Scss", "Tailwind"],
       link: "https://teamtech.se/",
     },
     {
       title: "Middler",
-      description: "Description for project 4",
+      description:
+        "An in-progress secure trading platform built with React, Vite, and Node.js. Designed to support peer-to-peer transactions involving Swish, Steam, and other systems, with a focus on safety, reliability, and user-friendly trading workflows.",
       image: Middler,
       technologies: ["React", "Vite", "JavaScript", "Tailwind", "Node.js"],
       link: "#",

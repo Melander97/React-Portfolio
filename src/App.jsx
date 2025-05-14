@@ -11,7 +11,7 @@ function App() {
   const heroData = {
     title: "Alexander Melander",
     description:
-      "Hi, I'm a web developer from Sweden, passionate about building awesome projects.",
+      "Hi, I'm a web developer based in Sweden, focused on building modern, responsive websites with great user experiences.",
     Portrait,
     PortraitFallback,
   };
@@ -23,7 +23,7 @@ function App() {
         {/* hero section */}
         <section
           id="home"
-          className="min-h-screen bg-linear-to-b from-gray-900 via-gray-800 to-gray-900 "
+          className="xl:min-h-screen bg-linear-to-b from-gray-900 via-gray-800 to-gray-900 "
         >
           <Hero {...heroData} />
         </section>
