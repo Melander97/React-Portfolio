@@ -19,7 +19,7 @@ It showcases my projects, skills, and contact information.
 
 ## 📫 Contact
 
-Feel free to connect with me on [LinkedIn](https://linkedin.com/in/https://www.linkedin.com/in/alexander-melander-0b804726a/) or check out my [GitHub](https://github.com/Melander97).
+Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/alexander-melander-0b804726a/) or check out my [GitHub](https://github.com/Melander97).
 
 ---
 
