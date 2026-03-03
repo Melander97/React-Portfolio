@@ -4,7 +4,7 @@ import Trolska from "../assets/images/trolska.webp";
 import Urban from "../assets/images/urbanadvisor.webp";
 import Teamtech from "../assets/images/teamtech.webp";
 import Kreng from "../assets/images/kreng.webp";
-import Middler from "../assets/images/middler.webp";
+import Skinheim from "../assets/images/skinheim.webp";
 import Thermonord from "../assets/images/thermonord.webp";
 
 export default function Projects() {
@@ -45,12 +45,12 @@ export default function Projects() {
       link: "https://teamtech.se/",
     },
     {
-      title: "Middler",
+      title: "Skinheim",
       description: "Description for project 4",
-      image: Middler,
+      image: Skinheim,
       technologies: ["React", "Vite", "JavaScript", "Tailwind", "Node.js"],
-      link: "#",
-      isComingSoon: true,
+      link: "https://www.skinheim.com/",
+      isComingSoon: false,
     },
   ];
 
