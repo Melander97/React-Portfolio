@@ -11,7 +11,7 @@ function App() {
   const heroData = {
     title: "Alexander Melander",
     description:
-      "Hi, I'm a web developer from Sweden, passionate about building awesome projects and learning new technologies. I love creating user-friendly and efficient web applications.",
+      "Hi, I'm Alex Melander — a full-stack developer from Sweden building fast, beautiful, and user-focused web experiences with modern tools like React and Tailwind.",
     Portrait,
     PortraitFallback,
   };
