@@ -11,7 +11,8 @@ export default function Projects() {
   const projectsData = [
     {
       title: "Kreng",
-      description: "Description for project 1",
+      description:
+        "The official website for the Swedish company Kreng, built with a headless Wordpress backend and Next.js frontend.",
       image: Kreng,
       technologies: ["Next.js", "Tailwind", "Wordpress (Headless)", "GraphQL"],
       link: "https://kreng.se/",
