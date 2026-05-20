@@ -21,7 +21,7 @@ export default function Projects() {
       title: "Trolska skogen",
       description: "Description for project 2",
       image: Trolska,
-      technologies: ["Wordpress", "PHP", "Tailwind", "MySQL"],
+      technologies: ["Wordpress", "PHP", "Tailwind", "MySQL", "WooCommerce"],
       link: "https://www.trolskaskogen.se/",
     },
     {
