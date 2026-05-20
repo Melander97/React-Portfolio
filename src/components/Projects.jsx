@@ -12,42 +12,47 @@ export default function Projects() {
     {
       title: "Kreng",
       description:
-        "The official website for the Swedish company Kreng, built with a headless Wordpress backend and Next.js frontend.",
+        "The official website for Swedish agency Kreng, built with a headless WordPress backend and a Next.js frontend. Focused on a fast, content-driven experience so the team can update projects and copy without touching code.",
       image: Kreng,
-      technologies: ["Next.js", "Tailwind", "Wordpress (Headless)", "GraphQL"],
+      technologies: ["Next.js", "Tailwind", "WordPress (Headless)", "GraphQL"],
       link: "https://kreng.se/",
     },
     {
       title: "Trolska skogen",
-      description: "Description for project 2",
+      description:
+        "A vibrant marketing and ticketing site for Trolska Skogen, a Swedish fairytale event destination. Built as a 2-person team — I owned most of the frontend and worked on the WooCommerce ticket integration with support from the team",
       image: Trolska,
-      technologies: ["Wordpress", "PHP", "Tailwind", "MySQL", "WooCommerce"],
+      technologies: ["WordPress", "PHP", "Tailwind", "MySQL", "WooCommerce"],
       link: "https://www.trolskaskogen.se/",
     },
     {
       title: "Thermo Nord",
-      description: "Description for project 3",
+      description:
+        "A corporate site for Thermo Nord, presenting their automated heating systems for property owners. Built as a 2-person project with Next.js and a headless WordPress CMS, focused on fast page loads and a content workflow the client could manage independently.",
       image: Thermonord,
-      technologies: ["Next.Js", "Wordpress", "Tailwind", "Javascript"],
+      technologies: ["Next.js", "WordPress", "Tailwind", "JavaScript"],
       link: "https://thermonord.se/",
     },
     {
       title: "Urban Advisors",
-      description: "Wordpress SPA created solo by myself",
+      description:
+        "A single-page site for Stockholm urban planning consultancy STHLM Urban Advisors. Built solo end-to-end — everything you see is custom: WordPress theme, layout,JavaScript-driven section transitions, and styling. No prebuilt themes or page builders.",
       image: Urban,
-      technologies: ["JavaScript", "PHP", "Wordpress", "Tailwind"],
+      technologies: ["JavaScript", "PHP", "WordPress", "Tailwind"],
       link: "https://urbanadvisors.se/",
     },
     {
       title: "Teamtech",
-      description: "Description for project 4",
+      description:
+        "A recruiting site for IT consultancy TeamTech, built as a 2-person project with a teammate. Next.js + TypeScript on the frontend, WordPress as a headless CMS, with SCSS for styling. A stack choice driven by my teammate's experience that gave me a chance to learn SCSS in a real project.",
       image: Teamtech,
-      technologies: ["Next.js", "Typescript", "Wordpress", "Scss", "Tailwind"],
+      technologies: ["Next.js", "Typescript", "WordPress", "Scss", "Tailwind"],
       link: "https://teamtech.se/",
     },
     {
       title: "Skinheim",
-      description: "Description for project 4",
+      description:
+        "A CS2 skin marketplace built primarily by my brother, where I contributed frontend work and UI polish. Live but lightly used after a Valve update changed the market shortly after launch",
       image: Skinheim,
       technologies: ["React", "Vite", "JavaScript", "Tailwind", "Node.js"],
       link: "https://www.skinheim.com/",
