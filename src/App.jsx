@@ -9,9 +9,10 @@ import Projects from "./components/Projects";
 
 function App() {
   const heroData = {
-    title: "Alexander Melander",
+    title: "Alexander",
+    titleTwo: "Melander",
     description:
-      "Hi, I'm Alex Melander — a full-stack developer from Sweden building fast, beautiful, and user-focused web experiences with modern tools like React and Tailwind.",
+      "Hi, I'm Alex Melander — a full-stack dev from Sweden. I build React frontends, headless WordPress sites, and experiment with bots and trading scripts on the side.",
     Portrait,
     PortraitFallback,
   };

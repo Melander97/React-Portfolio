@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 
 export default function Hero({
   title,
+  titleTwo,
   description,
   Portrait,
   PortraitFallback,
@@ -22,16 +23,22 @@ export default function Hero({
           delay: 0.2,
         }}
       >
-        <h1 className="text-4xl font-extrabold text-yellow-300 sm:text-5xl lg:text-6xl xl:text-7xl">
+        <h1 className="text-4xl font-extrabold text-white sm:text-5xl lg:text-6xl xl:text-7xl">
           {title}
+          <span className="block text-2xl font-bold text-yellow-300 sm:text-3xl lg:text-4xl xl:text-5xl pt-2">
+            {titleTwo}
+          </span>
         </h1>
-        <h2 className="text-xl font-semibold italic text-white sm:text-2xl">
+        <h2 className="text-xl font-semibold text-white sm:text-2xl">
           {description}
         </h2>
-        <div className="flex justify-center md:justify-start pt-2">
-          <a href="#footer" className="inline-block">
-            <Button variant="primary">Contact Me</Button>
-          </a>
+        <div className="flex flex-wrap gap-4">
+          <Button variant="primary" href="#footer">
+            Contact Me
+          </Button>
+          <Button variant="outline" href="#projects">
+            View Projects
+          </Button>
         </div>
       </motion.div>
 
