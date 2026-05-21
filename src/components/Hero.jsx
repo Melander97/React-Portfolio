@@ -32,7 +32,7 @@ export default function Hero({
         <h2 className="text-xl font-semibold text-white sm:text-2xl">
           {description}
         </h2>
-        <div className="flex flex-wrap gap-4">
+        <div className="flex flex-wrap gap-4 self-center md:self-start">
           <Button variant="primary" href="#footer">
             Contact Me
           </Button>

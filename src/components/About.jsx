@@ -20,7 +20,7 @@ export default function About() {
   return (
     <div
       id="about"
-      className="scroll-mt-20 bg-gray-900 py-20 px-6 md:px-12 lg:px-24"
+      className="scroll-mt-20 bg-gray-900 py-8 md:py-20 px-6 md:px-12 lg:px-24"
     >
       <div className="max-w-5xl mx-auto">
         <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-2">
