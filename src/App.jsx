@@ -6,6 +6,7 @@ import Portrait from "./assets/images/portrait-optimized.webp";
 import PortraitFallback from "./assets/images/portrait-fallback.jpg";
 import Tech from "./components/Tech";
 import Projects from "./components/Projects";
+import About from "./components/About";
 
 function App() {
   const heroData = {
@@ -27,6 +28,11 @@ function App() {
           className="min-h-screen bg-linear-to-b from-gray-900 via-gray-800 to-gray-900 "
         >
           <Hero {...heroData} />
+        </section>
+
+        {/* about section */}
+        <section id="about">
+          <About />
         </section>
 
         {/*tech stack section */}
