@@ -23,12 +23,12 @@ export default function About() {
       className="scroll-mt-20 bg-gray-900 py-20 px-6 md:px-12 lg:px-24"
     >
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-2">
+        <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-2">
           About <span className="text-yellow-300">Me</span>
         </h2>
         <div className="w-16 h-1 bg-yellow-300 mb-10 rounded-full" />
 
-        <div className="space-y-5 text-gray-300 text-lg leading-relaxed">
+        <div className="space-y-5 text-gray-200 text-lg leading-relaxed">
           <p>
             I'm a full-stack developer from Sweden, with a soft spot for the
             frontend side of the craft.

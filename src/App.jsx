@@ -25,7 +25,7 @@ function App() {
         {/* hero section */}
         <section
           id="home"
-          className="min-h-screen bg-linear-to-b from-gray-900 via-gray-800 to-gray-900 "
+          className=" bg-linear-to-b from-gray-900 via-gray-800 to-gray-900 "
         >
           <Hero {...heroData} />
         </section>
