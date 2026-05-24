@@ -85,7 +85,7 @@ export default function Projects() {
             },
           },
         }}
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 w-full max-w-[1200px]"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 w-full max-w-6xl"
       >
         {projectsData.map((project, index) => (
           <motion.div
