@@ -10,7 +10,7 @@ export default function Hero({
   PortraitFallback,
 }) {
   return (
-    <div className="container grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-4 py-10 md:py-20 md:px-8 max-w-6xl mx-auto">
+    <div className="container grid grid-cols-1 md:grid-cols-2 items-center gap-8 px-4 md:px-0 py-10 md:py-20  max-w-6xl mx-auto">
       {/* Text Content */}
       <motion.div
         className="flex flex-col gap-y-4 text-center md:text-start w-full"
