@@ -7,6 +7,7 @@ import PortraitFallback from "./assets/images/portrait-fallback.jpg";
 import Tech from "./components/Tech";
 import Projects from "./components/Projects";
 import About from "./components/About";
+import Contact from "./components/Contact";
 
 function App() {
   const heroData = {
@@ -43,6 +44,10 @@ function App() {
         {/* projects section */}
         <section id="projects" className="min-h-[80vh] bg-gray-900">
           <Projects />
+        </section>
+
+        <section id="contact">
+          <Contact />
         </section>
       </main>
 
