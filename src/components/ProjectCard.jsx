@@ -6,6 +6,9 @@ export default function ProjectCard({ project }) {
       <img
         src={project.image}
         alt={project.title}
+        width="600"
+        height="400"
+        loading="lazy"
         className="w-full h-48 object-cover"
       />
       <div className="p-6 flex flex-col flex-1">

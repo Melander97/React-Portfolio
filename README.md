@@ -21,6 +21,10 @@ It showcases my projects, skills, and contact information.
 
 Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/alexander-melander-0b804726a/) or check out my [GitHub](https://github.com/Melander97).
 
+## ⚡ Performance
+
+Lighthouse score: **100 / 100 / 100 / 100** (Performance, Accessibility, Best Practices, SEO)
+
 ---
 
 Made with ❤️ by [Alexander](https://alexmelander.vercel.app)

@@ -31,7 +31,13 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <a href="#home" className="flex items-center">
-          <img src={Logo} alt="AM Logo" className="w-14 h-auto" />
+          <img
+            width="56"
+            height="56"
+            src={Logo}
+            alt="AM Logo"
+            className="w-14 h-auto"
+          />
         </a>
 
         {/* Mobile Hamburger */}
