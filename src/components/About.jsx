@@ -43,7 +43,7 @@ export default function About() {
               href="https://www.hebafast.se/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-yellow-300 hover:underline"
+              className="text-yellow-300 hover:text-yellow-400 underline underline-offset-2 hover:underline"
             >
               Heba
             </a>
@@ -63,8 +63,11 @@ export default function About() {
 
           <p>
             Outside of code, I've been training at the gym for 9 years, play
-            some golf, watch hockey, and spend time with friends. Consistency is
-            kind of my thing.
+            some golf, watch hockey, and spend time with friends.{" "}
+            <span className="italic text-gray-300">
+              Och ja, jag pratar svenska.
+            </span>{" "}
+            Consistency is kind of my thing.
           </p>
 
           <p>

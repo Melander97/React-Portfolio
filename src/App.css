@@ -45,7 +45,8 @@ html {
 }
 
 /* Custom selection color */
-::selection {
-  background-color: black;
-  color: yellow;
+::selection,
+::-moz-selection {
+  background-color: #fde047;
+  color: #0f172a;
 }
