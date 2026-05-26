@@ -10,7 +10,7 @@ import {
   BiLogoTypescript,
   BiLogoWordpress,
 } from "react-icons/bi";
-import { SiVercel } from "react-icons/si";
+import { SiNextdotjs, SiVercel, SiGraphql } from "react-icons/si";
 import { motion } from "motion/react";
 
 export default function Tech() {
@@ -19,6 +19,7 @@ export default function Tech() {
       title: "Frontend",
       items: [
         { name: "React", Icon: BiLogoReact, color: "text-sky-400" },
+        { name: "Next.js", Icon: SiNextdotjs, color: "text-white" },
         { name: "TypeScript", Icon: BiLogoTypescript, color: "text-sky-500" },
         {
           name: "JavaScript",
@@ -34,6 +35,7 @@ export default function Tech() {
         { name: "Node.js", Icon: BiLogoNodejs, color: "text-green-400" },
         { name: "PHP", Icon: BiLogoPhp, color: "text-purple-500" },
         { name: "WordPress", Icon: BiLogoWordpress, color: "text-white" },
+        { name: "GraphQL", Icon: SiGraphql, color: "text-pink-400" },
       ],
     },
     {
