@@ -6,6 +6,7 @@ import Teamtech from "../assets/images/teamtech.webp";
 import Kreng from "../assets/images/kreng.webp";
 import Skinheim from "../assets/images/skinheim.webp";
 import Thermonord from "../assets/images/thermonord.webp";
+import Partyhat from "../assets/images/partyhat.webp";
 
 export default function Projects() {
   const projectsData = [
@@ -56,6 +57,21 @@ export default function Projects() {
       image: Skinheim,
       technologies: ["React", "Vite", "JavaScript", "Tailwind", "Node.js"],
       link: "https://www.skinheim.com/",
+      isComingSoon: false,
+    },
+    {
+      title: "partyhat",
+      description:
+        "Higher or Lower built on live Old School RuneScape item prices. Solo full-stack project — Phase 1 is a polished playable game with persistent records and accessibility support; Phase 2 will replace static data with the live OSRS Wiki API and a Postgres backend. Built to deepen my Next.js App Router, state management, and full-stack skills.",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind",
+        "Framer Motion",
+        "Vercel",
+      ],
+      link: "https://partyhat-orpin.vercel.app",
+      image: Partyhat,
       isComingSoon: false,
     },
   ];
