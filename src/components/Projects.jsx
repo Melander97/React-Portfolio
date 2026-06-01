@@ -60,7 +60,7 @@ export default function Projects() {
       isComingSoon: false,
     },
     {
-      title: "partyhat",
+      title: "Partyhat",
       description:
         "Higher or Lower built on live Old School RuneScape item prices. Solo full-stack project — Phase 1 is a polished playable game with persistent records and accessibility support; Phase 2 will replace static data with the live OSRS Wiki API and a Postgres backend. Built to deepen my Next.js App Router, state management, and full-stack skills.",
       technologies: [
