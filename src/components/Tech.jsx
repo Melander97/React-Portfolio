@@ -9,6 +9,7 @@ import {
   BiLogoTailwindCss,
   BiLogoTypescript,
   BiLogoWordpress,
+  BiLogoBootstrap,
 } from "react-icons/bi";
 import { SiNextdotjs, SiVercel, SiGraphql } from "react-icons/si";
 import { motion } from "motion/react";
@@ -27,6 +28,7 @@ export default function Tech() {
           color: "text-yellow-300",
         },
         { name: "Tailwind", Icon: BiLogoTailwindCss, color: "text-sky-400" },
+        { name: "Bootstrap", Icon: BiLogoBootstrap, color: "text-purple-500" },
       ],
     },
     {
