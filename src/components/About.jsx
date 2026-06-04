@@ -58,7 +58,8 @@ export default function About() {
             of backtesting scripts using TypeScript, Node, and the HLTV API.
             They're live, they work, and they've been a great way to sharpen up
             on async logic, APIs, and just thinking like a programmer outside
-            the comfort zone of UI work.
+            the comfort zone of UI work. Right now I'm building a Runescape
+            Higher lower full-stack project.
           </p>
 
           <p>
